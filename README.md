@@ -46,3 +46,16 @@ gsutil ls -r gs://gcp-bucket-nr2/**
 ```bash
 gsutil defstorageclass set nearline gs://gcp-bucket-nr2
 ```
+
+### W folderze example tworzę plik.
+
+```bash
+cd example
+nano plik.txt
+```
+
+### Plik kopiuję do Bucket-nr2.
+
+```bash
+gsutil cp file.txt gs://gcp-bucket-nr2
+```
