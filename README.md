@@ -40,3 +40,9 @@ gsutil cp gs://gcp-bucket-nr1/** gs://gcp-bucket-nr2
 ```bash
 gsutil ls -r gs://gcp-bucket-nr2/**
 ```
+
+### Zmieniam domyślną klasę pamięci „gcp-bucket-nr2” na „nearline”. Opis [klas](https://cloud.google.com/storage/docs/storage-classes) 
+
+```bash
+gsutil defstorageclass set nearline gs://gcp-bucket-nr2
+```
