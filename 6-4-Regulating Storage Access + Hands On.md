@@ -55,3 +55,7 @@ gsutil signurl -d 10m key.json gs://gcp-bucket-nr1/plik3.jgp
 bigdata_pw_2020@cloudshell:~ (affable-doodad-259911)$ gsutil signurl -d 10m key.json gs://gcp-bucket-nr1/plik3.jgp
 CommandException: The signurl command requires the pyopenssl library (try pip install pyopenssl or easy_install pyopenssl)
 ```
+
+7. Using created private key to create signed URL, which will last for 10 minutes (-d 10m) on file img1.jgp.
+```
+gsutil signurl -d 10m key.json gs://gcp-bucket-nr1/img1.jgp
